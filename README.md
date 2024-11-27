@@ -53,7 +53,7 @@ python -m videollama2.serve.model_worker --host 0.0.0.0 --controller http://loca
 ```
 
 ## 👍 Acknowledgement
-The codebase of this project is built upon VideoLLaMA 2, which is adapted from [**LLaVA 1.5**](https:github.com/haotian-liu/LLaVA) and [**FastChat**](https://github.com/lm-sys/FastChat). We are also grateful for the following projects our VideoLLaMA 2 arise from:
+The codebase of this project is built upon VideoLLaMA 2, which is adapted from [**LLaVA 1.5**](https:github.com/haotian-liu/LLaVA) and [**FastChat**](https://github.com/lm-sys/FastChat). We are also grateful for the following projects VideoLLaMA 2 is built upon:
 * [**LLaMA 2**](https://github.com/meta-llama/llama), [**Mistral-7B**](https://mistral.ai/news/announcing-mistral-7b/), [**OpenAI CLIP**](https://openai.com/index/clip/), [**Qwen2**](https://huggingface.co/collections/Qwen/qwen2-6659360b33528ced941e557f), [**SigLIP**](https://huggingface.co/collections/google/siglip-659d5e62f0ae1a57ae0e83ba), [**Honeybee**](https://github.com/kakaobrain/honeybee).
 * [**Video-ChatGPT**](https://github.com/mbzuai-oryx/Video-ChatGPT), [**Video-LLaVA**](https://github.com/PKU-YuanGroup/Video-LLaVA). 
 * [**WebVid**](https://github.com/m-bain/webvid), [**Panda-70M**](https://github.com/snap-research/Panda-70M), [**LanguageBind**](https://github.com/PKU-YuanGroup/LanguageBind), [**InternVid**](https://github.com/OpenGVLab/InternVideo/tree/main/Data/InternVid).
