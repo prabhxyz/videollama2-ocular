@@ -14,22 +14,10 @@ from videollama2.utils import disable_torch_init
 
 title_markdown = ("""
 <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
-  <a href="https://github.com/DAMO-NLP-SG/VideoLLaMA2" style="margin-right: 20px; text-decoration: none; display: flex; align-items: center;">
-    <img src="https://s2.loli.net/2024/06/03/D3NeXHWy5az9tmT.png" alt="VideoLLaMA 2 🔥🚀🔥" style="max-width: 120px; height: auto;">
-  </a>
   <div>
-    <h1 >VideoLLaMA 2: Advancing Spatial-Temporal Modeling and Audio Understanding in Video-LLMs</h1>
-    <h5 style="margin: 0;">If this demo please you, please give us a star ⭐ on Github or 💖 on this space.</h5>
+    <h1 >VideoLLaMA 2: Fine-tuned for Ocular Surgeries</h1>
+    <h5 style="margin: 0;">Prabhdeep Singh - Fine-Tuning VideoLLaMA 2 for Ocular Surgeries.</h5>
   </div>
-</div>
-
-
-<div align="center">
-    <div style="display:flex; gap: 0.25rem; margin-top: 10px;" align="center">
-        <a href="https://github.com/DAMO-NLP-SG/VideoLLaMA2"><img src='https://img.shields.io/badge/Github-VideoLLaMA2-9C276A'></a>
-        <a href="https://arxiv.org/pdf/2406.07476.pdf"><img src="https://img.shields.io/badge/Arxiv-2406.07476-AD1C18"></a>
-        <a href="https://github.com/DAMO-NLP-SG/VideoLLaMA2/stargazers"><img src="https://img.shields.io/github/stars/DAMO-NLP-SG/VideoLLaMA2.svg?style=social"></a>
-    </div>
 </div>
 """)
 
@@ -254,45 +242,6 @@ with gr.Blocks(title='VideoLLaMA 2 🔥🚀🔥', theme=theme, css=block_css) as
                 # stop_btn     = gr.Button(value="⏹️  Stop Generation", interactive=False)
                 regenerate_btn = gr.Button(value="🔄  Regenerate", interactive=True)
                 clear_btn      = gr.Button(value="🗑️  Clear history", interactive=True)
-
-    with gr.Row():
-        with gr.Column():
-            cur_dir = os.path.dirname(os.path.abspath(__file__))
-            gr.Examples(
-                examples=[
-                    [
-                        f"{cur_dir}/examples/extreme_ironing.jpg",
-                        "What happens in this image?",
-                    ],
-                    [
-                        f"{cur_dir}/examples/waterview.jpg",
-                        "What are the things I should be cautious about when I visit here?",
-                    ],
-                    [
-                        f"{cur_dir}/examples/desert.jpg",
-                        "If there are factual errors in the questions, point it out; if not, proceed answering the question. What’s happening in the desert?",
-                    ],
-                ],
-                inputs=[image, textbox],
-            )
-        with gr.Column():
-            gr.Examples(
-                examples=[
-                    [
-                        f"{cur_dir}/../../assets/cat_and_chicken.mp4",
-                        "What happens in this video?",
-                    ],
-                    [
-                        f"{cur_dir}/../../assets/sora.mp4",
-                        "Please describe this video.",
-                    ],
-                    [
-                        f"{cur_dir}/examples/sample_demo_1.mp4",
-                        "What does the baby do?",
-                    ],
-                ],
-                inputs=[video, textbox],
-            )
 
     gr.Markdown(tos_markdown)
     gr.Markdown(learn_more_markdown)
